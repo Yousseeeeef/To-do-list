@@ -1,0 +1,133 @@
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Couleur de fond de la page */
+    color: #333; /* Couleur du texte */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Conteneur principal */
+#app {
+    background-color: #ffffff; /* Couleur de fond du conteneur */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 400px;
+}
+
+/* Titre */
+h1 {
+    color: #007bff; /* Couleur du titre */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Formulaire de tâche */
+#task-form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* Champ de texte pour la tâche */
+#task-input {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Bouton Ajouter */
+button {
+    background-color: #007bff; /* Couleur de fond des boutons */
+    color: #ffffff; /* Couleur du texte des boutons */
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+/* Bouton Ajouter Note */
+.add-note-button {
+    background-color: #28a745;
+}
+
+/* Bouton Sauvegarder Note */
+.save-note-button {
+    background-color: #ffc107;
+}
+
+/* Bouton Supprimer Note */
+.delete-note-button {
+    background-color: #dc3545;
+}
+
+/* Liste des tâches */
+ul#task-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Élément de tâche */
+li.task-item {
+    background-color: #e9ecef; /* Couleur de fond des tâches */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+/* Description de la tâche */
+li.task-item span {
+    display: inline-block;
+    width: 80%;
+    overflow: hidden;
+}
+
+/* Boutons de tâche */
+.edit-button, .delete-button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Affichage des boutons de note */
+.task-note-textarea, .save-note-button, .delete-note-button {
+    display: none;
+}
+
+/* Zone de texte pour notes */
+.task-note-textarea {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Boutons pour notes */
+.save-note-button, .delete-note-button {
+    margin-top: 5px;
+    margin-right: 5px;
+    padding: 5px;
+}
+
+/* Affichage des boutons de note au survol */
+.task-item:hover .add-note-button,
+.task-item:hover .task-note-textarea,
+.task-item:hover .save-note-button,
+.task-item:hover .delete-note-button {
+    display: block;
+}
